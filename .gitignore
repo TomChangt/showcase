@@ -1,0 +1,67 @@
+# Maven
+target/
+!.mvn/wrapper/mvnw
+!.mvn/wrapper/mvnw.cmd
+
+# Eclipse
+.metadata/
+*.log
+*.tmp
+*.swp
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# NetBeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+*.nb-gradle/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.properties
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Other
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Spring Boot
+spring-boot-devtools.properties
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.suo
+*.tss
+*.nib
+*.nib/
+*.mxml
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.swiftpm
+*.goutputstream-*
+*.lock
