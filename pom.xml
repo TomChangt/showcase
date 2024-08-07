@@ -11,6 +11,7 @@
     <modules>
         <module>aop</module>
         <module>ioc</module>
+        <module>jdbc</module>
     </modules>
 
     <properties>
@@ -19,6 +20,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>6.1.11</spring.version>
         <junit.jupiter.version>5.9.2</junit.jupiter.version>
+        <h2.db.version>2.1.214</h2.db.version>
+        <lombok.version>1.18.24</lombok.version>
+        <jackson.version>2.16.2</jackson.version>
     </properties>
 
     <dependencyManagement>
@@ -37,6 +41,31 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-aspects</artifactId>
                 <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.db.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>

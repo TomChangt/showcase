@@ -1,10 +1,11 @@
 package com.ct.showcase.aop;
 
-import com.ct.showcase.ioc.IocConfig;
+
+import com.ct.showcase.ioc.UserService;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.context.annotation.Import;
 
 @Configuration
 @ComponentScan(basePackages = "com.ct.showcase")
@@ -19,7 +20,11 @@ import org.springframework.context.annotation.Import;
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 /*
  * @Import 注解用于将一个或多个配置类导入到 Spring 容器中。它帮助将 Bean 定义从不同的配置类中组合在一起，便于管理和使用。
- */
-@Import(IocConfig.class)
+
+@Import(IocConfig.class)*/
 public class AopConfig {
+    @Bean
+    public UserService userService() {
+        return new UserService();
+    }
 }
